@@ -28,6 +28,6 @@ def read_data(js_files_path):
             data = pd.DataFrame(columns=list(temp_df.columns))
         else:
             pass
-            data = pd.concat([data, temp_df], axis=0)
+        data = pd.concat([data, temp_df], axis=0)
     data.to_csv('/Users/jiayi/PycharmProjects/data/data.csv')
     return data
